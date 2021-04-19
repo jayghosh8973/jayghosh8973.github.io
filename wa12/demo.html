@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<a href="https://revealjs.com">
+						<img src="https://lh3.googleusercontent.com/1qiJ57x8NKgCdhTf-neWKqFy8fEswqGOFkN_09HsBnB7aJHTFb7oEDPk2Ha7SaHUVER2tIxXRevNY5rtsKmo34zCf_ChLRtWzO8p2XDcVHjBD-afBHxhXNN96TUB5mrOCWia1qSz1hxXP-qDpPlzhEt7wM1XmLilLVkN4qdkFAZqYStUWHx2s4ZL831WROFWc4sWZc_XNusvJUp6MAUXB3RxQSMokCzlSh2mpy7ZTIq452aXL5dWBRLr8KTCfLhbJtjuh-sWMZIXVVHPHpje-HzQi7fErZ_hTi2zwfam0JHIbeLRN0gyfnvAJE7PDL74uhpm0A4z3qzFqlDt-79JYseyjp8dmMF8sMq0oe_-PIwBD1RdUaR1GIZoeuxTv9gzn2M9f3H-dMQLYxcVfqys-XST6AHDGLqGB0QPajYWBA4tQowA3zJVcOqyT9xJLwVTLxWWNYOJxwfw55Z6n7e6caeEljPFpfrQ8ZHUSgNT3MMNiomVwdFq_fzkIGGKXHDY71L1o-jWCKzFvcd_6-upLn1fFqZGHRHHNwd9I34WCvnLwbwdv2lLwjl81rm_ReyvSnaMmKgqMFezYeRKvwWqY-2jTrZlMcR_Cu6-o_ja7i9Wr3lV2WCcPcfBnuzMC_bgr8mFSPX_3_g0R1tnSio7dI0YIzXnTZ681cXnL1O1aIJtsOvpKn-J5rBJFOd8tXfYTJSviXrc-Gm61rah7Vrq1aif=s937-no?authuser=0" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<h3>Reveal.JS Tutorial</h3>
+					<p>
+						<small>Created by Jay Ghosh</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Hello There</h2>
+					<p>
+						reveal.js allows you to create web based visualizations utilizing html and java script. This enable you to customize your presentations far more than powerpoint or google slides.
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Lets walkthrough some code</h2>
+						<p>Press the downkey to keep looking</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Lets take a look at the code:</h2>
+						<p>You first need to create a section tag with the content you want to display</p>
+						<pre><code data-trim data-noescape>
+							&lt;section&gt;
+								&lt;h2&gt;Hello World&lt;/h2&gt;&lt;br&gt;
+								&lt;h3&gt;Press the downkey and lets see what this looks like&lt;/h3&gt;
+
+							&lt;/section&gt;
+							  </code></pre>
+					</section>
+					<section>
+						<h2>Hello World</h2>
+						<h3>Press the downkey and lets see what this looks like</h3>
+					</section>
+					<section>
+						<h2>Press the right keys and lets continue on -> </h2>
+					</section>
+				</section>
+
+
+				<section>
+					<h2>Let's run through the FizzBuzz coding interview example</h2>
+					<p>
+						Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz" instead of the number. For numbers which are multiples of both three and five print "FizzBuzz" instead of the number.
+					</p>
+				</section>
+				<section>
+
+					<section data-auto-animate>
+						<h2 data-id="code-title">FizzBuzz</h2>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+							def fizzBuzz():
+							    for i in range(1,101):
+								    #create if/else blocks
+						</code></pre>
+					</section>
+
+					<section data-auto-animate>
+						<h2 data-id="code-title">With animations and completion of the challenge</h2>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
+							def fizzbuzz():
+							    for i in range(1,101):
+								    if (i % 15 == 0):
+									    print('FizzBuzz')
+								    elif (i % 3 == 0):
+									    print('fizz')
+								    elif (i % 5 == 0):
+									    print('buzz')
+								    else:
+									    print(i)
+						</script></code></pre>
+					</section>
+				</section>
+
+				
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
